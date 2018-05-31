@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Cabin|Oswald" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="assets/css/pagina_principal.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.mask.min.js"></script>
+        <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/js/index.js"></script>
+    </head>
+    <body>
+        <div class="row Main">
+          <!-- Inicio Cabeçalho -->
+          <div id='header' class="row tamanhoMinino section">
+              <div class='col m4 offset-m8 hide-on-small-only'>
+                <form method="GET" action="" onsubmit="">
+                    <div class="col m2">
+                      <label for="buscar" class=""><i class="small material-icons white-text">search</i> </label>
+                    </div>
+                    <div class="col m10">
+                      <input type="text" name="buscar" id="buscar" class='search_box'>
+                      <input type="submit" style="display: none" />
+                    </div>           
+                </form>
+              </div>
+              <!-- Inicio Lista Dropdown -->
+                <ul id='dropdown1' class='dropdown-content'>
+                      <li><a href="#!" class="black-text">Home</a></li>
+                      <li class='divider'></li>
+                      <li><a href="#!" class="black-text">Cursos</a></li>
+                      <li class='divider'></li>
+                      <li><a href="#!" class="black-text">Sobre</a></li>
+                    </ul>
+                <!-- Fim Lista Dropdown -->
+              <nav class="yellow accent-4">
+                <div class="nav-wrapper center">
+                  <!-- Inicio Logo -->
+                  <a href="#" class="brand-logo center row">
+                    <img src="assets/images/logo.png" class="col m12 offset-m1 offset-s1">
+                  </a>
+                  <!-- Fim Logo -->
+                  <!-- Inicio Trigger Dropdown -->
+                  <ul class="left">
+                    <li class=''><a class='dropdown-button' href='#!' data-target='dropdown1'><i class="material-icons drop_trigger black-text ">menu</i></a></li>
+                  </ul>
+                </div>
+                <!-- Fim Trigger Dropdown -->                
+              </nav>
+        </div>
+        <!-- Fim Cabeçalho -->   
+
+        <!-- Inicio Corpo -->
+          <div class="container">
+            <div class="row">
+                <h5 class='center-align white-text mainTitle'>> CURSOS ONLINE</h5>      
+                <div class='container_cursos'>
+
+                  <!-- Inicio Card de Curso (Inserir Dinamicamente) -->
+                   <div class=' col l4 m6 s12 main_form2'>
+                    <div class='img_curso'>
+                      <img src="assets/images/Pagina_Principal/01.jpeg" class='responsive-img'>
+                    </div>
+                    <div class='description'>
+                      <div class='title_line'>
+                        <img src="assets/images/Pagina_Principal/indicate.png">
+                        <span>Curso de Idiomas</span>
+                      </div>                        
+                        <div class='description_area'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.lrem</div>                    
+                    </div>
+                    <div class='link_curso'>
+                      <form method="GET" action="rota/id" onsubmit="">            
+                        <button type="submit" class="button_class">
+                          Assistir               
+                        </button>  
+                      </form>                        
+                    </div>                    
+                    <div class='duration_time'>
+                      <span class='duration_text'> 00:00</span>
+                      <img src="assets/images/Pagina_Principal/duration.png">
+                      <img src="assets/images/Pagina_Principal/youtube.png">
+                    </div>
+                   </div>     
+                  <!-- Fim Card de Curso (Inserir Dinamicamente) -->
+
+                   <div class=' col l4 m6 s12 main_form2'>
+                    <div class='img_curso'>
+                      <img src="assets/images/Pagina_Principal/03.jpg" class='responsive-img'>
+                    </div>
+                    <div class='description'>
+                      <div class='title_line'>
+                        <img src="assets/images/Pagina_Principal/indicate.png">
+                        <span>Curso de Idiomas</span>
+                      </div>                        
+                        <div class='description_area'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.lrem</div>                    
+                    </div>
+                    <div class='link_curso'>
+                      <form method="GET" action="rota/id" onsubmit="">            
+                        <button type="submit" class="button_class">
+                          Assistir               
+                        </button>  
+                      </form>                        
+                    </div>                    
+                    <div class='duration_time'>
+                      <span class='duration_text'> 00:00</span>
+                      <img src="assets/images/Pagina_Principal/duration.png">
+                      <img src="assets/images/Pagina_Principal/youtube.png">
+                    </div>
+                   </div>   
+
+                   <div class=' col l4 m6 s12 main_form2'>
+                    <div class='img_curso'>
+                      <img src="assets/images/Pagina_Principal/02.png" class='responsive-img'>
+                    </div>
+                    <div class='description'>
+                      <div class='title_line'>
+                        <img src="assets/images/Pagina_Principal/indicate.png">
+                        <span>Curso de Idiomas</span>
+                      </div>                        
+                        <div class='description_area'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.lrem</div>                    
+                    </div>
+                    <div class='link_curso'>
+                      <form method="GET" action="rota/id" onsubmit="">            
+                        <button type="submit" class="button_class">
+                          Assistir               
+                        </button>  
+                      </form>                        
+                    </div>                    
+                    <div class='duration_time'>
+                      <span class='duration_text'> 00:00</span>
+                      <img src="assets/images/Pagina_Principal/duration.png">
+                      <img src="assets/images/Pagina_Principal/youtube.png">
+                    </div>
+                   </div>   
+
+                   <div class=' col l4 m6 s12 main_form2'>
+                    <div class='img_curso'>
+                      <img src="assets/images/Pagina_Principal/04.jpg" class='responsive-img'>
+                    </div>
+                    <div class='description'>
+                      <div class='title_line'>
+                        <img src="assets/images/Pagina_Principal/indicate.png">
+                        <span>Curso de Idiomas</span>
+                      </div>                        
+                        <div class='description_area'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.lremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.lrem</div>                    
+                    </div>
+                    <div class='link_curso'>
+                      <form method="GET" action="rota/id" onsubmit="">            
+                        <button type="submit" class="button_class">
+                          Assistir               
+                        </button>  
+                      </form>                        
+                    </div>                    
+                    <div class='duration_time'>
+                      <span class='duration_text'> 00:00</span>
+                      <img src="assets/images/Pagina_Principal/duration.png">
+                      <img src="assets/images/Pagina_Principal/youtube.png">
+                    </div>
+                   </div>   
+
+                   <div class=' col l4 m6 s12 main_form2'>
+                    <div class='img_curso'>
+                      <img src="assets/images/Pagina_Principal/05.png" class='responsive-img'>
+                    </div>
+                    <div class='description'>
+                      <div class='title_line'>
+                        <img src="assets/images/Pagina_Principal/indicate.png">
+                        <span>Curso de Idiomas</span>
+                      </div>                        
+                        <div class='description_area'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.lrem</div>                    
+                    </div>
+                    <div class='link_curso'>
+                      <form method="GET" action="rota/id" onsubmit="">            
+                        <button type="submit" class="button_class">
+                          Assistir               
+                        </button>  
+                      </form>                        
+                    </div>                    
+                    <div class='duration_time'>
+                      <span class='duration_text'> 00:00</span>
+                      <img src="assets/images/Pagina_Principal/duration.png">
+                      <img src="assets/images/Pagina_Principal/youtube.png">
+                    </div>
+                   </div>              
+                </div>               
+              </div>  
+          </div>   
+        <!-- Fim Corpo -->
+         <!-- Inicio Rodapé -->
+          <div class="row rodape">
+            <div class='col s8 offset-s2 row'>
+              <div class="col m8 offset-m3 offset-l4">
+                <span class='white-text'>SIGA-NOS</span>
+                <a href="#"><img src="assets/images/pinterest.png" class=""></a>
+                <a href="#"><img src="assets/images/linkedin.png" class=""></a>
+                <a href="#"><img src="assets/images/google.png" class=""></a>
+                <a href="#"><img src="assets/images/face.png" class=""></a>
+              </div>              
+            </div>
+            <hr>
+          </div>
+        <!-- Fim Rodapé -->  
+        </div>        
+      </div>                 
+  </body>
+</html>

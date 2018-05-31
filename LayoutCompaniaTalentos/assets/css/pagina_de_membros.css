@@ -1,0 +1,199 @@
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-image: url("../images/Pagina_de_Membros/fundo.png");
+  background-size: 150% 100%;
+
+}
+
+.Main{
+  background-image: url("");
+}
+
+/*Inicio Apresentação (Cabeçalho)*/
+#header{
+  margin-top: 20px !important;
+  background-image: url('');
+}  
+
+.logo{
+  margin-top: 20px;
+  display: block;
+  margin: auto;
+  max-width: 150px;
+}
+
+.logo_img{
+  display: block;
+  margin: auto;
+  max-width: 150px;
+
+}
+/*Fim Apresentação (Cabeçalho)*/
+
+/*Inicio Corpo*/
+
+.main_form{
+  display: block;
+  margin: auto;
+  background-color: #fff;
+  height: 461px;
+  width: 491px;
+  -webkit-box-shadow: 5px 5px 21px 0px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow:    5px 5px 21px 0px rgba(0, 0, 0, 0.63);
+  box-shadow:         5px 5px 21px 0px rgba(0, 0, 0, 0.63);
+  border-radius: 0 0 20px 0;
+  max-width: 491px;
+}
+
+.margin_class{
+  margin-top: 30px;
+}
+
+.bottom_margin{
+  margin-bottom: 30px;
+}
+
+  /*Inicio Signup Form e Log Form*/
+  .signup-form, .log_form{
+    margin-top: 30px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 0px 30px;
+    max-width: 491px;
+  }
+
+  .inputBorder{    
+      background-color: #fff !important;
+      border: thin solid #ccc !important;
+      height: 40px !important;    
+      border-radius: 10px !important;
+      color: #717070;
+      margin-top: 10px !important;
+  }
+
+  .inputBorder:focus{    
+      background-color: #ccc !important;
+  }
+
+  .lbl_login{
+    color: #666;
+    font-size: 1em;
+    padding-left: 5px;
+    font-family: 'Oswald', sans-serif;
+  }  
+
+  .form_log_footer{
+    margin-top: 20px;
+  }
+
+  .forget_password{
+    color: #6e6e6e;
+    font-family: 'Cabin', sans-serif;
+
+  }
+
+  .button_class{
+    width: 150px;
+    background-color: #666;
+    color: #fff;
+    height: 37px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1.5em;
+    font-style: normal;
+    border-radius: 10px;
+    border: thin outset #fff;
+  }
+  /*Fim Signup Form e Log Form*/
+
+  /*Inicio LogForm (Single)*/
+  .log_form{  
+    background-image: url("../images/Linha_Logar.png");}
+  /*Fim LogForm (Single)*/
+/*Fim Corpo*/
+
+/*Inicio Rodape*/
+.rodape{
+  margin-top: 70px !important;  
+}
+
+.social_media{
+  padding-right: 5px;
+  color: #666;
+  line-height: -2px;
+}
+
+hr{
+  margin-top: 28px;
+  border: 2px solid #666;  
+}
+
+/*Fim Rodape*/
+
+@media only screen and (max-width: 330px) {
+  /*Inicio Rodapé*/  
+  .rodape img{
+    width: 20px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (min-width: 760px){
+  .main_form{
+    margin-left: 135px !important;    
+}
+
+@media only screen and (min-width: 1000px){
+  .main_form{
+    margin-left: 10px !important;    
+}
+
+@media only screen and (min-width: 1025px){
+  .main_form{
+    margin-left: 110px !important;    
+}
+
+@media only screen and (min-width: 1500px){
+  .main_form{
+    margin-left: 190px !important;    
+}
+
+@media only screen and (min-width: 1900px){
+  .main_form{
+    margin-left: 235px !important;    
+}
+
+#header{
+    margin-top: 40px !important;  
+
+  }
+
+  .main_form{
+    margin-top: 40px !important;  
+
+  }
+  .rodape{
+    margin-top: 265px !important;  
+  }
+
+@media only screen and (min-width: 2100px){
+  .main_form{
+    margin-left: 400px !important;    
+  }
+
+  #header{
+    margin-top: 70px !important;  
+
+  }
+
+  .main_form{
+    margin-top: 70px !important;  
+
+  }
+  .rodape{
+    margin-top: 270px !important;  
+  }

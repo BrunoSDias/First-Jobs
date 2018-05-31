@@ -1,0 +1,234 @@
+.Main{
+  background-image: url("../images/Background.png");
+  background-repeat: no-repeat;
+  /*max-width: 1022px;  */
+  background-size: 100% 100%;
+  background-position: 50% 100%;
+}
+
+/*Inicio Apresentação (Cabeçalho)*/
+#header{
+      background-image: url('../images/Topo_2.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      background-position: 50% 0%;
+      /*max-width: 1022px;*/
+      margin-bottom: 10px;
+}  
+
+.search_box{
+      background-color: rgba(116, 212, 242, 0.3) !important;
+      border: thin outset #fff !important;
+      border-radius: 20px !important;
+      height: 30px !important;    
+      color: #fff;
+      padding-left: 5px !important;
+      font-family: 'Dosis', sans-serif;        
+}
+
+.search_box:focus{
+      background-color: rgba(116, 212, 242, 0.5) !important;
+}
+.tamanhoMinino{
+  min-height: 219px;
+}
+
+  /*Navbar - Inicio*/
+.dropdown-button{
+  margin-top: -10px;
+}
+ .drop_trigger{
+    font-size: 40px !important;
+ }
+
+  nav{
+    margin-top: 110px;
+    max-height: 40px;
+    /*max-width: 1022px;*/
+  }
+
+  .brand-logo{
+    margin-top: -110px;
+    margin-left: 3.2px;
+  }
+  /*Navbar - Fim*/
+/*Fim Apresentação (Cabeçalho)*/
+
+/*Inicio Corpo*/
+.mainTitle{
+  font-family:"Cabin", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: #000 1px 1px ;
+  font-size: 1.75em;
+}
+
+.main_form{
+  background-color: #fff;
+  height: 461px;
+  width: 491px;
+  -webkit-box-shadow: 5px 5px 21px 0px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow:    5px 5px 21px 0px rgba(0, 0, 0, 0.63);
+  box-shadow:         5px 5px 21px 0px rgba(0, 0, 0, 0.63);
+  border-radius: 0 0 20px 0;
+  max-width: 491px;
+}
+
+  /*Inicio Signup Form e Log Form*/
+  .signup-form, .log_form{
+    margin-top: 50px;
+    background-image: url("../images/Linha_cadastrar.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    padding: 18px 30px;
+    max-width: 491px;
+  }
+
+  .inputBorder{    
+      background-color: #ccc !important;
+      border: thin inset !important;
+      height: 20px !important;    
+      color: #fff;
+      padding-left: 5px !important;
+      font-family: 'Dosis', sans-serif;  
+      text-align: center;
+  }
+
+  .inputBorder:focus{    
+      background-color: #717070 !important;
+      color: #000;
+  }
+
+  .right_text{
+    display: block !important;
+    text-align: right !important;
+    font-style: italic;
+  }  
+
+  .button_class{
+    width: 150px;
+    background-color: #333;
+    color: #fff;
+    height: 30px;
+    font-size: 0.8em;
+    font-style: italic;
+  }
+  /*Fim Signup Form e Log Form*/
+
+  /*Inicio LogForm (Single)*/
+  .log_form{  
+    background-image: url("../images/Linha_Logar.png");}
+  /*Fim LogForm (Single)*/
+/*Fim Corpo*/
+
+/*Inicio Rodapé*/
+.rodape{
+  height: 70px;
+  padding-top: 20px;
+}
+
+.rodape span{
+  font-style: italic;
+  font-size: 1.0em;
+  float: left;
+}
+
+.rodape img{
+  width: 25px;
+  margin-left: 5px;
+}
+
+hr{
+  margin-top: 40px;
+  border: 2px solid #fff;  
+}
+
+/*Fim Rodapé*/
+
+
+
+
+/*Media Queries*/
+@media only screen and (min-width: 374px) and (max-width: 424px) {
+  .rodape span{
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 500px) {
+  .rodape span{
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /*Inicio Rodapé*/
+  .rodape span{
+    font-size: 0.9em;
+  }
+  .rodape img{
+    width: 20px;
+    margin-left: 5px;
+  }
+  /*Fim Rodapé*/
+
+  .dropdown-content {
+    width: 100% !important;    
+  }
+  .dropdown-content > li > a{
+    text-align: center;   
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /*Inicio Corpo*/
+  .main_form{
+    background-color: #fff;
+    height: 511px;
+    width: 491px;
+    -webkit-box-shadow: 5px 5px 21px 0px rgba(0, 0, 0, 0.63);
+    -moz-box-shadow:    5px 5px 21px 0px rgba(0, 0, 0, 0.63);
+    box-shadow:         5px 5px 21px 0px rgba(0, 0, 0, 0.63);
+    border-radius: 0 0 20px 0;
+  }
+    /*Inicio Signup Form e Log Form*/
+    .signup-form, .log_form{
+      background-image: url("");
+      margin-left: 10px;
+    }
+    /*Fim Signup Form e Log Form*/
+
+    .log_form{
+      border-top: 0.3px ridge rgba(0,0,0,0.5);      
+    }
+  /*Fim Corpo*/
+}
+
+@media only screen and (min-width: 1025px){
+  .main_form{
+    margin-left: 110px !important;    
+  }
+  .rodape span{
+    margin-left: 40px;
+  }  
+
+
+@media only screen and (min-width: 1500px){
+  .main_form{
+    margin-left: 230px !important;    
+}
+  .rodape span{
+    margin-left: 80px;
+  }  
+
+@media only screen and (min-width: 2300px){
+  .main_form{
+    margin-left: 400px !important;    
+  }
+  .rodape span{
+    margin-left: 180px;
+  }  
+
+
+
+

@@ -1,0 +1,487 @@
+html{
+	border: 0;
+	padding: 0;
+}
+
+body{
+  padding: 0;
+  border: 0;
+}
+
+/*Inicio Apresentação (Cabeçalho)*/
+
+.mainBox{
+  background-color: rgba(42,173,58,1);
+  border-radius: 30px;
+  box-shadow: inset 0px 4px 20px 0px rgba(42,173,58);
+}
+
+.mainTitle{
+  font-family: 'Montserrat', serif;
+  
+}
+
+.mainSubtitle{
+  font-size: 1.5em;
+  color: #d3d5d6;
+}
+
+.title{
+  font-family: Impact;
+}
+
+.subtitle{
+  font-family: "Arial Black";
+  font-size: 1.3em;
+  color: #a7aaaf;
+}
+
+#saibaMais{
+  font-size: 1.4em;
+}
+
+#saibaMais i{
+  width: 10px; 
+}
+
+
+
+#saibaMais:hover{
+  color: rgba(255,255,255,1);
+}
+
+#saibaMais:hover i{
+  transform: translate(4px, 0px);
+}
+/*Fim Apresentação (Cabeçalho)*/
+
+
+
+/*Inicio Modal Box*/
+  .modal{
+    max-width: 700px; 
+    padding-top: 0px;
+    border-radius: 10px;
+  }
+
+  .inputBorder{
+    border: thin inset !important;
+    box-shadow: 0 1px 0 0 none !important
+    border-bottom: 1px solid orange !important;
+   }
+
+
+  .inputBorder:focus {
+     border-bottom: 1px solid orange !important;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   
+/*Fim Modal Box*/
+
+
+
+/*Inicio caixa de opções*/
+
+.boxOfOptions{
+  box-shadow: inset 0px 2px 2px 0px rgba(0, 255, 0, 0.2);
+}
+
+.optionsTitulo{  
+  color: #fff;
+}
+
+.optionsConteudo{
+  font-family: 'Titillium Web', sans-serif !important;
+}
+
+/*Fim caixa de opções*/
+
+
+
+/* Inicio Caixa de Midia */
+
+#media{
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.2);
+}
+
+/* Fim Caixa de Midia */
+
+.formularioButtonBox{
+  height: 250px;  
+}
+
+.formularioButton{
+  height: 100px !important;
+  border-radius: 15px;
+  opacity: .8;
+}
+.formularioButton:hover{
+  opacity: 1;
+}
+
+
+
+/*Inico SpyScroll*/
+.spyController{
+  box-shadow: inset 0px 1px 0px 1px rgba(255, 255, 255, 0.5);
+  display: none;
+  background-color: rgba(255,255,255,0.1);
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  z-index: 3;   
+  border-radius-top-left: 10px;
+}
+
+.spyController:hover a{  
+  color: black;  
+  font-style: bold;
+}
+
+.spyController a:hover{  
+  color: green;  
+  font-style: bold;
+}
+
+.spyLinks{
+  font-family: 'Abel', sans-serif;
+}
+
+/*Fim SpyScroll*/
+
+.row{
+	margin-bottom: 0px;
+}
+
+.tamanhoMinino{
+  min-height: 300px;
+}
+
+.session{
+  border: 1px solid rgba(0,0,0,0.3);
+
+}
+
+
+.card{
+  border-color: green; 
+}
+
+.whatsapp{
+  display: none;
+  z-index: 3;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.whatsText{
+  display: none;
+  vertical-align: 15px;
+}
+
+.icoSize{
+  margin-right: 5px;
+  width: 3em;
+}
+
+
+
+.whatsText{
+  font-family: Impact;
+}
+
+.backgroundImage{
+	background: url('/static/images/background.jpg')
+}
+
+.otherColorBack{
+	background-color: #000;
+}
+
+.maxWidthClass{
+	width: 80%;
+}
+
+.backgroundDarker{
+	background-color: #f0f0f0;
+	padding-top: 10px;
+  position: relative;
+}
+
+.itemMargin{
+	margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.itemPadding{
+  padding: 80px 0px;
+}
+
+.circularImg{
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+  margin:auto; 
+}
+
+  .circularImg img {
+    width: auto;
+    height: 100%;
+  }
+
+
+
+.circularFixed{
+	  width: 130px;
+  	height: 130px;
+  	overflow: hidden;
+  	border-radius: 50%;
+  	border: 1px solid #000;
+  	margin: 20px auto; 
+}
+
+  .circularFixed img {
+    width: auto;
+    height: 100%;
+  }
+
+.btn{
+  margin-bottom: -20px;
+  height: 50px;
+  width: 100%;
+}
+
+.contorno{
+  border: 1px solid orange;
+  padding: 10px 5px;
+  margin: 20px 0px;
+  max-width: 450px;
+  height: 420px;
+  overflow: auto;
+}
+
+blockquote{
+  min-height: 100px;
+  border-left: 5px solid orange;
+}
+
+.paddingComments{
+  padding: 10px;
+}
+
+.paddingLogos{
+  padding: 20px 0px;
+}
+
+.linearBox{
+  background: linear-gradient(90deg, white 50%, #4caf50 50%);
+}
+
+.linearText{  
+  font-family: Verdana;
+  background: linear-gradient(90deg, #4caf50 50%, white 50%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+ .faceIco{
+  margin-right: 15px;
+  width: 25px;
+ }
+
+ .faceLink{
+  font-size: 1.3em;
+ }
+
+ .contactBox{
+    border-left: 1px solid white;
+ }
+
+ .emailInfo{
+    font-size: 1.0em;
+ }
+
+ .whatsLink{
+  font-size: 1.3em;
+ }
+
+ .whatsIco{  
+  margin-right: 15px;
+  width: 25px;
+ }
+
+
+/*Form inicia aqui*/
+ .formInicio{
+    right: 5px;
+    width:100%;
+    padding:30px;
+    margin-right: 20px;
+    background: #FFF;
+    border-radius: 10px;    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);    
+}
+
+.formInicio .containerCampo{
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.formInicio .containerCampo .btn{
+    background: #2aad3a;
+}
+
+.formInicio h1{
+    background: #2aad3a;
+    padding: 20px 30px 15px 30px;
+    margin: 0px -11px 30px -12px;
+    border-radius: 10px 10px 0 0;    
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;    
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+}
+
+.formInicio h1 > span{
+    display: block;
+    margin-top: 2px;
+    font: 13px Arial, Helvetica, sans-serif;
+}
+
+.formInicio label{
+    display: block;
+    font: 13px Arial, Helvetica, sans-serif;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.formInicio input:focus label{    
+    color: #888;    
+}
+
+.formInicio input[type="text"],
+.formInicio input[type="email"]{
+    display: block;    
+    width: 100%;
+    border-radius: 6px;    
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);    
+}
+
+.formInicio .nomeCampo{
+    font: normal 20px 'Bitter', serif;
+    color: #2aad3a;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.formInicio .nomeCampo span {
+    background: #2aad3a;
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    font-size: 14px;
+    margin-left: -40px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.formInicio input[type="button"], 
+.formInicio input[type="submit"]{
+    background: #2aad3a;
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+    font-size: 15px;
+}
+.formInicio input[type="button"]:hover, 
+.formInicio input[type="submit"]:hover{
+    background: #2A6881;    
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+/*Form termina aqui*/
+
+#contato{
+  box-shadow: inset 0px 1px 0px 1px rgba(33,33,33,0.5);
+}
+/*Inicio Fontes por Tags*/
+blockquote{
+  font-family: 'Abel', sans-serif;
+  color: #000;
+  font-weight: bold;
+}
+
+p, h3, h5, button{
+  font-family: 'Montserrat', sans-serif !important;
+}
+/*Fim Fontes por Tags*/
+
+@media screen and (max-width: 480px) {
+    .contorno {
+        height: auto;
+        overflow: visible;
+    }
+    .contactBox{
+      border-left: 0px;
+      border-top: 1px solid white;
+      margin-top: 50px;
+    }
+
+    .formInicio{
+      margin-right: 10px;
+    }
+
+    .formInicio h1{
+      margin: 0px -10px 30px -11px;
+  }
+}
+
+@media screen and (max-width: 376px) {    
+    .formInicio{
+      margin-right: 5px;
+    }
+    .formInicio h1{
+      margin: 0px -10px 30px -11px;
+  }
+  .mainTitle{
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .whatsapp{
+      z-index: 3;
+      position: fixed;
+      top: 20px;
+      left: 20px;
+    }
+
+    .icoSize{
+      width: 20px;
+    }
+
+    .whatsText{
+      font-family: Impact;
+    }
+
+    #header{      
+      background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1400px) {  
+
+  .formInicio{
+      max-width: 360px;
+  }
+}

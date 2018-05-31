@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Cabin|Oswald|Roboto|Montserrat|Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="assets/css/pagina_de_duvidas.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.mask.min.js"></script>
+        <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+        <script type="text/javascript" src="assets/js/index.js"></script>
+    </head>
+    <body>
+        <div class="row Main">
+          <!-- Inicio Cabeçalho -->
+          <div id='header' class="row tamanhoMinino section">
+              <div class='col m4 offset-m8 hide-on-small-only'>
+                <form method="GET" action="" onsubmit="">
+                    <div class="col m2">
+                      <label for="buscar" class=""><i class="small material-icons white-text">search</i> </label>
+                    </div>
+                    <div class="col m10">
+                      <input type="text" name="buscar" id="buscar" class='search_box'>
+                      <input type="submit" style="display: none" />
+                    </div>           
+                </form>
+              </div>
+              <!-- Inicio Lista Dropdown -->
+                <ul id='dropdown1' class='dropdown-content'>
+                      <li><a href="#!" class="black-text">Home</a></li>
+                      <li class='divider'></li>
+                      <li><a href="#!" class="black-text">Cursos</a></li>
+                      <li class='divider'></li>
+                      <li><a href="#!" class="black-text">Sobre</a></li>
+                    </ul>
+                <!-- Fim Lista Dropdown -->
+              <nav class="yellow accent-4">
+                <div class="nav-wrapper center">
+                  <!-- Inicio Logo -->
+                  <a href="#" class="brand-logo center row">
+                    <img src="assets/images/logo.png" class="col m12 offset-m1 offset-s1">
+                  </a>
+                  <!-- Fim Logo -->
+                  <!-- Inicio Trigger Dropdown -->
+                  <ul class="left">
+                    <li class=''><a class='dropdown-button' href='#!' data-target='dropdown1'><i class="material-icons drop_trigger black-text ">menu</i></a></li>
+                  </ul>
+                </div>
+                <!-- Fim Trigger Dropdown -->                
+              </nav>
+        </div>
+        <!-- Fim Cabeçalho -->   
+
+        <!-- Inicio Corpo -->
+          <div class="container">
+            <div class="row">
+                <h5 class='center-align white-text mainTitle'>> COMPRA CURSOS - TIRE SUAS DÚVIDAS</h5>      
+                <div class='container_cursos'>
+
+                   <div class='col l8 m12 s12 help_form'>
+                    <div>
+                      <h4 class="help_title">Psicologia do Esporte - Combo Módulo 1 e 2</h4>
+                      <p class="help_subtitle center-align">Entenda o quão importante é o equilibrio emocional ao desempenho dos jogadores</p>
+                    </div>
+                    <div>
+                      <p class="help_doubt">Você está com Dúvida? Deixe no Ajudar!</p>                      
+                    </div>
+                      <form method="POST" action="" onsubmit="">
+                        <div class='doubt_area'>
+                          <div>
+                            <label for="nome" class="lbl_doubt">Nome Completo </label>
+                            <input id="nome" name="nome" type="text" class=" inputBorder" maxlength=50 required>
+                          </div>
+                          <div>
+                            <label for="email" class="lbl_doubt">Email </label>
+                            <input id="email" name="email" type="email" class=" inputBorder" maxlength=50 required>
+                          </div>
+                          <div>
+                            <label for="email" class="lbl_doubt">Dúvida </label>
+                            <textarea rows="40"></textarea>
+                          </div>
+                      </div>
+                        <div>
+                          <button type="submit" class="button_class yellow accent-4">Enviar Dúvida</button> 
+                        </div>
+                      </form>
+                   </div>     
+
+                   <div class='col l4 m12 s12 contact_container'>
+                      <h4 class="contact_title">Outras formas de contato</h4> 
+                      <i class="material-icons left">email</i>
+                      <span class="contact_item"> Email:</span>
+                      <p class="contact_info">cursos@diagnosticodetalentos.com.br</p>
+                      <i class="material-icons left">phone</i>
+                      <span class="contact_item"> Telefone:</span>
+                      <p class="contact_info">(51) 98598-8598</p>
+                   </div>   
+                </div>               
+              </div>  
+          </div>   
+        <!-- Fim Corpo -->
+         <!-- Inicio Rodapé -->
+          <div class="row rodape">
+            <div class='col s8 offset-s2 row'>
+              <div class="col m8 offset-m3 offset-l4">
+                <span class='white-text'>SIGA-NOS</span>
+                <a href="#"><img src="assets/images/pinterest.png" class=""></a>
+                <a href="#"><img src="assets/images/linkedin.png" class=""></a>
+                <a href="#"><img src="assets/images/google.png" class=""></a>
+                <a href="#"><img src="assets/images/face.png" class=""></a>
+              </div>              
+            </div>
+            <hr>
+          </div>
+        <!-- Fim Rodapé -->  
+        </div>        
+      </div>                 
+  </body>
+</html>

@@ -1,0 +1,27 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.backgroundColor{
+	background-color: #fff;
+}
+
+.mainTitle{
+  font-family:"Cabin", sans-serif;
+  font-weight: bold;
+  text-shadow: #000 1px 1px 1px;
+}
+
+.formularioButton{
+  border-radius: 30px;
+  opacity: .8;
+  background-color: #006597;
+}
+.formularioButton:hover{
+  opacity: 1;
+}
+
+.formularioButton:focus{
+  background-color: #006597;
+}

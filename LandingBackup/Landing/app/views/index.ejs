@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+  <head>
+		<title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Montserrat|Titillium+Web" rel="stylesheet">
+    
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.mask.min.js"></script>
+  <script type="text/javascript" src="javascripts/materialize.min.js"></script>
+  <script type="text/javascript" src="javascripts/index.js"></script>
+
+  <style type="text/css">
+
+  	.backgroundImage{			
+			background-image: url('images/alohaBack2.jpeg');      
+      background-size: 100% 100%;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+		}
+    #header{
+      background-attachment: fixed;
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/alohaBack1.jpeg');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+    }
+
+  </style>
+
+  <body>      
+
+    <div class='backgroundImage'>    
+
+      <!-- Whatsapp API -->
+    <div class='whatsapp'>
+      <a href="#">
+        <img class='icoSize'src="images/whats.png">
+        <span class='green-text whatsText'>Whatsapp</span>
+      </a>      
+    </div>  
+
+    <!-- ScrollSpy -->
+    <div class="spyController col hide-on-small-only m3 l2">
+      <ul class="section table-of-contents">
+        <li><a href="#header" class='flow-text spyLinks'>Inicio</a></li>
+        <li><a href="#media" class='flow-text spyLinks'>Mídia</a></li>
+        <li><a href="#content" class='flow-text spyLinks'>Conteúdo</a></li>        
+        <li><a href="#comments" class='flow-text spyLinks'>Comentários</a></li>
+        <li><a href="#contato" class='flow-text spyLinks'>Contato</a></li>
+      </ul>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content col l3 m12 s12 white">
+          <div class='orange lighten-2'>
+            <h4 class='white-text center-align title'>NÃO PERCA A CHANCE</h4>
+          </div>
+            <form class='card-content' onsubmit='#'>
+              <h5 class='orange-text text-lighten-1 center-align title'>Preencha o formulário e aproveite essa oportunidade</h5>
+              <div class='col s12'>
+                <input id="nome" placeholder="SEU NOME" name="nome" type="text" class="inputBorder center-align flow-text" required>
+              </div>
+              <div class='col s12'>
+                <input id="email" placeholder="SEU E-MAIL" name="email" type="email" class=" inputBorder center-align" required>
+              </div>
+              <div class='col s12'>
+                <input id="whatsapp" placeholder="NUMERO CELULAR" name="whatsapp" type="text" class="inputBorder center-align cel" required>
+              </div> 
+              <div class='col s12 white-text'>
+                <button type="submit" value='Cadastre-se' class="btn btn-success orange">
+                  Cadastre-se                
+                </button>          
+              </div>          
+            </form>            
+        </div>        
+    </div>      
+
+      <!-- Cabeçalho -->
+    	<div id='header' class="row tamanhoMinino section scrollspy">
+        <div class='col l8 m12 s12 itemMargin'>
+            <div class='col s12'>
+              <div class='l6 m6 col s12 offset-l5 offset-m3 mainBox'>
+                <h2 class='center-align mainTitle white-text'>SEJA SÓCIO DO BILIONÁRIO CARLOS WIZARD AINDA HOJE!</h2>
+                <h5 class='center-align subtitle white-text text-lighten-3'>Faça parte do MAIOR projeto de empreendedorismo do Brasil.</h5>
+                 <p><a href="#modal1" id='saibaMais' class='center-align modal-trigger mainSubtitle'>Saiba Mais    <i class="material-icons">arrow_forward</i></a></p>                
+              </div>           
+            </div>              
+        </div>     
+
+        <div class="formInicio col l3 m11 s11 offset-m1 right">
+          <h1>Não perca esta chance!<span>Conheça a oportunidade.</span></h1>
+          <form>
+              <div class="nomeCampo"><span>1</span>Nome</div>
+              <div class="containerCampo">
+                  <label>Nome Completo<input type="text" name="field1" required/></label>
+              </div>
+
+              <div class="nomeCampo"><span>2</span>Email</div>
+              <div class="containerCampo">
+                  <label>Endereço de Email <input type="email" name="field3" required/></label>                  
+              </div>
+
+              <div class="nomeCampo"><span>3</span>Telefone</div>
+                  <div class="containerCampo">
+                  <label>Numero de Telefone Celular<input type="text" class='cel' name="field4" required/></label>
+              </div>
+              <div class="containerCampo">
+                <button class='btn btn-success'>Cadastrar</button>
+              </div>
+          </form>
+        </div>   
+    	</div>  	
+
+      <!--Area da midia -->
+      <div id='media' class="backgroundDarker white section scrollspy">
+          <div class="container">
+          <div class="row itemPadding">
+            <div class="col l6 m6 s12 linearBox left">
+              <h3 class='title right-align linearText'>Aloha já é notícia nas principais Mídias do Brasil!</h3>
+            </div>
+            <div class="col l6 m6 s12 left">
+              <div class="col l4 m6 s8 offset-s2 center">
+                <img src="images/logo1.png" class='maxWidthClass paddingLogos'>
+              </div>
+              <div class="col l4 m6 s8 offset-s2 center">
+                <img src="images/logo2.png" class='maxWidthClass paddingLogos'>
+              </div>
+              <div class="col l4 m6 s8 offset-s2 center">
+                <img src="images/logo3.png" class='maxWidthClass paddingLogos'>
+              </div>
+              <div class="col l4 m6 s8 offset-s2 center">
+                <img src="images/logo4.jpg" class='maxWidthClass paddingLogos'>
+              </div>
+              <div class="col l4 m6 s8 offset-s2 center">
+                <img src="images/logo5.png" class='maxWidthClass paddingLogos'>
+              </div>
+              <div class="col l4 m6 s8 offset-s2 center">
+                <img src="images/logo6.png" class='maxWidthClass paddingLogos'>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+
+    	
+      <!--Primeira linha após a Area da midia -->
+      <div id='content' class="green itemPadding section scrollspy boxOfOptions">
+      	<div class="container">
+          <div class="row">
+            <div class="col s12 m4">
+              <div>
+                <h5 class="optionsTitulo center-align">Passo a Passo</h5>
+                <div class="circularImg">
+                	<img src="images/imgEx1d.jpg!d">  						
+    						</div>            
+                <p class="white-text center">Temos o Passo a Passo para você iniciar neste negócio. Simples e Eficaz para o seu crescimento no negócio..</p>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div>
+                <h5 class="optionsTitulo white-text center-align">Trabalhe em Horário Flexivel</h5>
+                <div class="circularImg">            							
+                  <img src="images/imgEx2d.jpg!d">              
+    						</div>
+                <p class="white-text center">Faça sua jornada de trabalho. Se você tiver de 5 a 8 horas por semana, já é o suficiente para começarmos a trabalhar.</p>
+              </div>
+            </div>
+            <div class="col s12 m4">
+              <div>
+                <h5 class="optionsTitulo center-align">Marketing Digital</h5>
+                <div class="circularImg">                         
+                  <img src="images/imgEx3d.jpg!d">              
+                </div>
+                <p class="white-text center">Vamos utilizar todo o potencial do Marketing Digital para crescer. Você terá ferramentas e direcionamento exclusivo de como fazer este negócio de forma digital.</p>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+
+
+      <!-- Botao Formulario-->
+      <div class='row itemPadding formularioButtonBox'>
+        <div class='container'>
+          <div class='col l6 s12 offset-l3 valign-wrapper'>
+            <button class="center waves-effect waves-light btn modal-trigger orange formularioButton" href="#modal1">Aproveite | Faça Parte</button>      
+          </div>
+        </div>
+      </div>
+      
+
+      <!--Comentarios da Empresa -->
+    	<div id='comments' class='backgroundDarker white section scrollspy'>
+    		<p class='center-align subtitle orange-text text-darken-1'>Veja o que nossos Líderes tem a dizer da Aloha.</p>
+    	  <div class="row container">
+          <div class='col l6 m12 s12 contorno left'>  	  	
+      	  	<div class="row paddingComments">  
+            <blockquote>"Em nossa Equipe Premier, você terá todo suporte, treinamento e capacitação para fazer o negócio acontecer junto conosco". Me chame no whatsapp para tirar suas dúvidas: (13) 99141-5805</blockquote>		
+              <p class='subtitle center heightJobComment orange-text text-lighten-1'>Coach e Empreendedor Aloha</p>
+              <h5 class="center heightNameComment">Leandro Sierra</h5>
+      	  		<div class="circularFixed">
+      	      	<img src="images/empreendedor1.jpg">  						
+      				</div>
+      	  	</div>
+          </div>
+          <div class='col l6 m12 s12 contorno right'>        
+            <div class="row paddingComments">  
+            <blockquote>“No início, a expectativa de ganho fica entre 2 mil e 5 mil reais. Depois de um ano ou dois, se a pessoa se dedicar, ela poder chegar a um ganho de 10 mil a 20 mil reais”.</blockquote>   
+              <p class='subtitle center heightJobComment orange-text text-lighten-1'>Fundador do Aloha</p>
+              <h5 class="center heightNameComment">Carlos Wizard</h5>
+              <div class="circularFixed">
+                <img src="images/empreendedor2.png">              
+              </div>
+            </div>
+          </div>
+    	  </div>	       
+    	</div>
+      
+      <!--Contato e Redes Sociais -->
+      <div class='grey darken-4 itemPadding section scrollspy' id='contato'>
+        <div class='container row grey-text text-lighten-5'>
+          <div class='col s12 m6 l6 left-align'>
+            <h5>Siga nos nas redes sociais: </h5>
+            <p><a class='left faceLink' href="#"><img src="images/face.png" class='left faceIco'>Facebook</a> </p>
+          </div>  
+          <div class='col s12 m6 l6 left-align contactBox'>
+            <h5>Entre em contato para saber mais!</h5>
+            <div>
+              <p class='marginEmail'><i class="material-icons left">email</i> Email: contato@email.com </p>
+            </div>            
+            <div>
+              <p><a class='left whatsLink green-text' href="#"><img src="images/whats.png" class='left whatsIco'> Whatsapp</a> </p>
+            </div>            
+          </div>   
+        </div>
+      </div>
+
+      <!--Rodapé -->
+    	<div class='footer grey darken-3'>
+    		<div class='container row grey-text text-lighten-5'>
+    			<div class='col s12 m8 l8 center-align'>
+    				<p><small>Copyright 2017 - www.equipealohapremier.com.br - All Rights Reserved</small></p>
+    			</div>		
+    		</div>
+    	</div>
+    </div>
+  </body>
+</html>

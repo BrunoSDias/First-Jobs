@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+  <head>
+		<title><%= title %></title>
+    <link href="https://fonts.googleapis.com/css?family=Abel|Dosis|Cabin|Josefin+Sans|Roboto|Material+Icons" rel="stylesheet">
+    
+    <link href='http://fonts.googleapis.com/css?family=Bitter' rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel='stylesheet' href='/css/style.css' />
+  </head>  
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="javascripts/jquery.mask.min.js"></script>
+  <script type="text/javascript" src="javascripts/materialize.min.js"></script>
+  <script type="text/javascript" src="javascripts/index.js"></script>
+
+  <style type="text/css">
+  </style>
+
+  <body>      
+
+    <div class='backgroundImage'>    
+
+    <!-- Inicio Whatsapp API -->
+    <div class='whatsapp'>
+      <a href="#">
+        <img class='icoSize'src="images/whats2.png">
+        <span class='green-text whatsText'>Whatsapp</span>
+      </a>      
+    </div>  
+    <!-- Fim Whatsapp API -->
+
+
+
+    <!-- Inicio ScrollSpy -->
+    <div class="spyController col hide-on-small-only m3 l2">
+      <ul class="section table-of-contents">
+        <li><a href="#header" class='flow-text spyLinks'>Inicio</a></li>
+        <li><a href="#media" class='flow-text spyLinks'>Mídia</a></li>
+        <li><a href="#vantagens" class='flow-text spyLinks'>Vantagens</a></li>        
+        <li><a href="#sobre" class='flow-text spyLinks'>Sobre</a></li>        
+        <li><a href="#comments" class='flow-text spyLinks'>Comentários</a></li>
+        <li><a href="#contato" class='flow-text spyLinks'>Contato</a></li>
+      </ul>
+    </div>
+    <!-- Fim ScrollSpy -->
+
+
+
+    <!-- Inicio Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content col l3 m12 s12 white">
+          <div class='backModal lighten-2'>
+            <h4 class='white-text center-align title'>NÃO PERCA A CHANCE</h4>
+          </div>
+            <form class='card-content' method="POST" action="/cadastrar" onsubmit="return unmask()">
+              <h5 class='center-align title'>Preencha o formulário e aproveite essa oportunidade</h5>
+              <div class='col s12'>
+                <input id="nome" placeholder="SEU NOME" name="nome" type="text" class="inputBorder center-align flow-text" maxlength=50 required>
+              </div>
+              <div class='col s12'>
+                <input id="email" placeholder="SEU E-MAIL" name="email" type="email" class=" inputBorder center-align" maxlength=50 required>
+              </div>
+              <div class='col s12'>
+                <input id="whatsapp" placeholder="NUMERO CELULAR" name="whatsapp" type="text" class="inputBorder center-align cel" required>
+              </div> 
+              <div class='col s12 white-text'>
+                <button type="submit" value='Cadastre-se' class="btn btn-success modalButton btnModal backModal">
+                  Cadastre-se                
+                </button>          
+              </div>          
+            </form>            
+        </div>        
+    </div>      
+    <!-- Fim Modal -->
+
+
+
+
+      <!-- Inicio Cabeçalho -->
+    	<div id='header' class="row tamanhoMinino section scrollspy">
+        <div class='col l12 m12 s12'>
+          <!-- Formulario estatico -->
+            <!-- <div class="col l3 m11 s11">
+              <div class="formInicio">
+                <h1>Não perca esta chance!<span>Conheça a oportunidade.</span></h1>
+                <form>
+                    <div class="nomeCampo"><span>1</span>Nome</div>
+                    <div class="containerCampo">
+                        <label>Nome Completo<input type="text" name="field1" required/></label>
+                    </div>
+
+                    <div class="nomeCampo"><span>2</span>Email</div>
+                    <div class="containerCampo">
+                        <label>Endereço de Email <input type="email" name="field3" required/></label>                  
+                    </div>
+
+                    <div class="nomeCampo"><span>3</span>Telefone</div>
+                        <div class="containerCampo">
+                        <label>Numero de Telefone Celular<input type="text" class='cel' name="field4" required/></label>
+                    </div>
+                    <div class="containerCampo">
+                      <button class='btn btn-success'>Cadastrar</button>
+                    </div>
+                </form>
+              </div>   
+            </div> -->
+            <div id='mainBox' class='mainBox'>
+                <h1 class='left-align mainTitle white-text'>Seja sócio de Carlos Wizard</h1>
+                <h5 class='left-align mainSubtitle white-text'>Faça parte do MAIOR projeto de empreendedorismo do Brasil.</h5>
+                 <p><a href="#modal1" id='saibaMais' class='white-text center-align modal-trigger mainSubtitle'>Clique aqui e Saiba Mais    <i class="material-icons">arrow_forward</i></a></p>
+            </div>           
+      </div>
+    </div>
+    <!-- Fim Cabeçalho -->   
+
+
+
+
+    <!--Inicio Area da midia -->
+      <div id='media' class="backgroundDetails white section scrollspy">
+          <div class="container">
+          <div class="row itemPadding">
+            <div class="col l6 m9 s11 linearBox offset-l1 offset-m1 left">
+              <h3 class='title right-align linearText'>Aloha já é notícia nas principais Mídias do Brasil!</h3>
+            </div>
+            <div class="col l5 m6 s12 left">
+              <div class="col l4 m8 s6 offset-m8 offset-s3 center">
+                <img src="images/logo1.png" class='maxWidthClass paddingLogos'>
+              </div>
+              <div class="col l4 m8 s6 offset-m8 offset-s3 center">
+                <img src="images/logo2.png" class='maxWidthClass paddingLogos'>
+              </div>
+              <div class="col l4 m8 s6 offset-m8 offset-s3 center">
+                <img src="images/logo3.png" class='maxWidthClass paddingLogos'>
+              </div>
+              <div class="col l4 m8 s6 offset-m8 offset-s3 center">
+                <img src="images/logo4.jpg" class='maxWidthClass paddingLogos'>
+              </div>
+              <div class="col l4 m8 s6 offset-m8 offset-s3 center">
+                <img src="images/logo5.png" class='maxWidthClass paddingLogos'>
+              </div>
+              <div class="col l4 m8 s6 offset-m8 offset-s3 center">
+                <img src="images/logo6.png" class='maxWidthClass paddingLogos'>
+              </div>
+            </div>
+          </div>
+          <div class='divider'></div>
+        </div>
+      </div> 
+      <!--Fim Area da midia -->
+
+
+
+      <!--Primeira linha após a area de textos -->
+      <!-- <div id='content' class="itemPadding section scrollspy boxOfOptions">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 l4 m8 offset-m2">
+              <div>
+                <h5 class="optionsTitulo center-align">Passo a Passo</h5>
+                <div class="circularImg">
+                  <img src="images/imgEx1d.jpg!d">              
+                </div>            
+                <p class="center optionsText">Temos o Passo a Passo para você iniciar neste negócio. Simples e Eficaz para o seu crescimento no negócio..</p>
+              </div>
+            </div>
+            <div class="col s12 l4 m8 offset-m2">
+              <div>
+                <h5 class="optionsTitulo center-align">Trabalhe em Horário Flexivel</h5>
+                <div class="circularImg">                         
+                  <img src="images/imgEx2d.jpg!d">              
+                </div>
+                <p class="center optionsText">Faça sua jornada de trabalho. Se você tiver de 5 a 8 horas por semana, já é o suficiente para começarmos a trabalhar.</p>
+              </div>
+            </div>
+            <div class="col s12 l4 m8 offset-m2">
+              <div>
+                <h5 class="optionsTitulo center-align">Marketing Digital</h5>
+                <div class="circularImg">                         
+                  <img src="images/imgEx3d.jpg!d">              
+                </div>
+                <p class="center optionsText">Vamos utilizar todo o potencial do Marketing Digital para crescer. Você terá ferramentas e direcionamento exclusivo de como fazer este negócio de forma digital.</p>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div> -->
+
+
+
+
+      <!-- Inicio area de textos -->
+      <div class="container textArea">
+        <div class="section">          
+          <div class="row">
+            <div class="col s12 center">
+              <h4 class='paragraphTitle'>É fato que a tecnologia está mudando o mundo.</h4>
+              <h5 class="paragraphSubtitle">Vivemos em uma época onde os avanços tecnológicos acontecem de forma acelerada jamais vista.</h5>
+              <p id='vantagens' class="paragraph scrollspy">Novas tendências e modelos de negócios disruptivos surgem cada vez mais, como por exemplo, o Uber é a maior companhia de táxis do mundo e não possui veículos, o Alibaba é o varejista mais valioso do mundo e não possui estoque, o Facebook é o provedor de mídias mais popular do mundo e não cria conteúdos, o Instagram é a empresa fotográfica mais valiosa do mundo e não vende câmeras.</p>
+              <p class="paragraph">Alinhado a esse novo cenário de mudanças, Carlos Wizard lançou sua mais nova empresa, a <b>ALOHA</b>, que é o maior projeto de empreendedorismo social do Brasil e a melhor oportunidade de crescimento pessoal, profissional e de prosperidade financeira já vista no país.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Inicio area vantagens -->
+        <div class="section advantagesBox">          
+          <div class="row">
+            <div class="col s12 center">
+              <div class="row">
+                <div class="col s12 l4 m8 offset-m2">
+                  <div>
+                    <h5 class="optionsTitulo center-align">Passo a Passo</h5>
+                    <div class="circularImg">
+                      <img src="images/imgEx1d.jpg">              
+                    </div>            
+                    <p class="center optionsText">Temos o Passo a Passo para você iniciar neste negócio. Simples e Eficaz para o seu crescimento no negócio..</p>
+                  </div>
+                </div>
+                <div class="col s12 l4 m8 offset-m2">
+                  <div>
+                    <h5 class="optionsTitulo center-align">Trabalhe em Horário Flexivel</h5>
+                    <div class="circularImg">                         
+                      <img src="images/imgEx2d.jpg">              
+                    </div>
+                    <p class="center optionsText">Faça sua jornada de trabalho. Se você tiver de 5 a 8 horas por semana, já é o suficiente para começarmos a trabalhar.</p>
+                  </div>
+                </div>
+                <div class="col s12 l4 m8 offset-m2">
+                  <div>
+                    <h5 class="optionsTitulo center-align">Marketing Digital</h5>
+                    <div class="circularImg">                         
+                      <img src="images/imgEx3d.jpg">              
+                    </div>
+                    <p class="center optionsText">Vamos utilizar todo o potencial do Marketing Digital para crescer. Você terá ferramentas e direcionamento exclusivo de como fazer este negócio de forma digital.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Inicio Botao Formulario-->
+              <div class='row itemPadding'>
+                  <div class='col l6 s12 offset-l3'>
+                    <button class="center waves-effect waves-light btnAproveite modal-trigger formularioButton" href="#modal1">Aproveite | Faça Parte</button>      
+                  </div>
+              </div>
+              <!-- Fim Botao Formulario-->
+            </div>
+          </div>
+        </div>
+         <!-- Fim area vantagens -->
+        <div class="section">          
+          <div class="row">
+            <div class="col s12 center">
+              <h4 class='paragraphTitle'>Lorem Ipsum</h4>
+              <h5 class="paragraph"><b>Lorem Ipsum</b> se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum.</h5>
+              <p id='sobre' class="paragraph scrollspy">Ao contrário do que se acredita, <b>Lorem Ipsum</b> não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de <b>Lorem Ipsum</b>, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem.</p>
+              <div class="videoContainer">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SprmH9CicuE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div> 
+         <div class="section paragraphContent">          
+          <div class="row">
+            <div class="col l12 m12 s12 center clearfix">          
+              <p class="paragraph"><img class="img2" src="images/aloha1.jpg"><span class='paragraphTitle'>Lorem Ipsum</span><br><br>Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc. Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet. Ele usa um dicionário com mais de 200 palavras em Latim combinado com um punhado de modelos de estrutura de frases para gerar um Lorem Ipsum com aparência razoável, livre de repetições, inserções de humor, palavras não características, etc.</p>
+            </div>
+          </div>
+        </div>
+         <div class="section paragraphContent">          
+          <div class="row">
+            <div class="col l12 m12 s12 center clearfix">          
+              <p class="paragraph"><img class="img1" src="images/aloha2.jpg"><span class='paragraphTitle center-align'>Lorem Ipsum</span><br><br>Ao contrário do que se acredita, <b>Lorem Ipsum</b> não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma obra de literatura latina clássica datada de 45 AC. Richard McClintock, um professor de latim do Hampden-Sydney College na Virginia, pesquisou uma das mais obscuras palavras em latim, consectetur, oriunda de uma passagem de <b>Lorem Ipsum</b>, e, procurando por entre citações da palavra na literatura clássica, descobriu a sua indubitável origem.</p>
+            </div>
+          </div>
+        </div>
+        <div class="section paragraphContent">          
+          <div class="row">
+            <div class="col l12 m12 s12 center clearfix">          
+              <p class="paragraph"><img class="img2" src="images/aloha3.jpg"><span class='paragraphTitle center-align'>Lorem Ipsum</span><br><br>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).</p>
+            </div>
+          </div>
+        </div>
+      </div> 
+      <!-- Fim area de textos --> 	
+
+
+      
+      
+
+      <!--Inicio Comentarios da Empresa -->
+    	<div id='comments' class='backgroundDetails white section scrollspy'>    		
+    	  <div class="row container">
+          <p class='center-align commentsTitle'>Veja o que nossos Líderes tem a dizer da Aloha.</p>
+          <div class='col l6 m8 s12 offset-m2 contorno'>  	  	
+      	  	<div class="row paddingComments">  
+            <blockquote>"Em nossa Equipe Premier, você terá todo suporte, treinamento e capacitação para fazer o negócio acontecer junto conosco". Me chame no whatsapp para tirar suas dúvidas: (13) 99141-5805</blockquote>		
+              <p class='subtitle center'>Coach e Empreendedor Aloha</p>
+              <h5 class="center donoComentario">Leandro Sierra</h5>
+      	  		<div class="circularFixed">
+      	      	<img src="images/empreendedor1.jpg">  						
+      				</div>
+      	  	</div>
+          </div>
+          <div class='col l6 m8 s12 pull-m2 contorno right'>        
+            <div class="row paddingComments">  
+            <blockquote>“No início, a expectativa de ganho fica entre 2 mil e 5 mil reais. Depois de um ano ou dois, se a pessoa se dedicar, ela poder chegar a um ganho de 10 mil a 20 mil reais”.</blockquote>   
+              <p class='subtitle center'>Fundador do Aloha</p>
+              <h5 class="center donoComentario">Carlos Wizard</h5>
+              <div class="circularFixed">
+                <img src="images/empreendedor2.png">              
+              </div>
+            </div>
+          </div>
+    	  </div>	       
+    	</div>
+      <!--Fim Comentarios da Empresa -->
+
+
+
+      <!-- Inicio Botao Formulario-->
+      <div class='row itemPadding formularioButtonBox'>
+        <div class='container'>
+          <div class='col l6 s12 offset-l3'>
+            <button class="center waves-effect waves-light btnAproveite modal-trigger formularioButton" href="#modal1">Aproveite | Faça Parte</button>      
+          </div>
+        </div>
+      </div>
+      <!-- Fim Botao Formulario-->
+
+      
+
+      <!--Inicio Contato e Redes Sociais -->
+      <div class='grey darken-4 itemPadding section scrollspy' id='contato'>
+        <div class='container row grey-text text-lighten-5'>
+          <div class='col s12 m6 l6 left-align'>
+            <h5 class=''>Siga nos nas redes sociais: </h5>
+            <p><a class='left faceLink' href="#"><img src="images/face.png" class='left faceIco'>Facebook</a> </p>
+          </div>  
+          <div class='col s12 m6 l6 left-align contactBox'>
+            <h5>Entre em contato para saber mais!</h5>
+            <div>
+              <p class='marginEmail'><i class="material-icons left">email</i> Email: contato@email.com </p>
+            </div>            
+            <div>
+              <p><a class='left whatsLink green-text' href="#"><img src="images/whats.png" class='left whatsIco'> Whatsapp</a> </p>
+            </div>            
+          </div>   
+        </div>
+      </div>
+      <!-- Fim Contato e Redes Sociais -->
+
+
+      <!--Inicio Rodapé -->
+    	<div class='footer grey darken-3'>
+    		<div class='container row grey-text text-lighten-5'>
+    			<div class='col s12 m8 l8 center-align'>
+    				<p><small>Copyright 2017 - www.equipealohapremier.com.br - All Rights Reserved</small></p>
+    			</div>		
+    		</div>
+    	</div>
+      <!--Fim Rodapé -->
+
+
+    </div>
+  </body>
+</html>
